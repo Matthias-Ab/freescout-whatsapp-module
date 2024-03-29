@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "968f73bcf5520ee401d641d0d79555ec",
+    "content-hash": "11d085436dd0afea40410d4b3671ed26",
     "packages": [
         {
             "name": "brick/math",
@@ -5466,6 +5466,116 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.2.7"
             },
             "time": "2023-12-08T13:03:43+00:00"
+        },
+        {
+            "name": "twilio/sdk",
+            "version": "5.42.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twilio/twilio-php.git",
+                "reference": "0cfcb871b18a9c427dd9e8f0ed7458d43009b48a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/0cfcb871b18a9c427dd9e8f0ed7458d43009b48a",
+                "reference": "0cfcb871b18a9c427dd9e8f0ed7458d43009b48a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "apigen/apigen": "^4.1",
+                "guzzlehttp/guzzle": "^6.3",
+                "phpunit/phpunit": ">=4.5"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Twilio\\": "src/Twilio/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Twilio API Team",
+                    "email": "api@twilio.com"
+                }
+            ],
+            "description": "A PHP wrapper for Twilio's API",
+            "homepage": "http://github.com/twilio/twilio-php",
+            "keywords": [
+                "api",
+                "sms",
+                "twilio"
+            ],
+            "support": {
+                "issues": "https://github.com/twilio/twilio-php/issues",
+                "source": "https://github.com/twilio/twilio-php/tree/5.42.2"
+            },
+            "time": "2020-02-05T19:55:13+00:00"
+        },
+        {
+            "name": "twilioman/twilio",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chetanhub/laravel-twilio.git",
+                "reference": "12be8c723ff72d34f19f7d02930f230afccdf888"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chetanhub/laravel-twilio/zipball/12be8c723ff72d34f19f7d02930f230afccdf888",
+                "reference": "12be8c723ff72d34f19f7d02930f230afccdf888",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "twilio/sdk": "5.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TwilioMan\\LaravelTwilio\\Provider\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Twilio": "TwilioMan\\LaravelTwilio\\Facade\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TwilioMan\\LaravelTwilio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "chetan",
+                    "email": "chetandeep@singsys.com"
+                }
+            ],
+            "description": "Twilio API for Laravel",
+            "keywords": [
+                "laravel",
+                "sms",
+                "twilio"
+            ],
+            "support": {
+                "issues": "https://github.com/chetanhub/laravel-twilio/issues",
+                "source": "https://github.com/chetanhub/laravel-twilio/tree/0.1"
+            },
+            "time": "2020-01-17T03:58:22+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
