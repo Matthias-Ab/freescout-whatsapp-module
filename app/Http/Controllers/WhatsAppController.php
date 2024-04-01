@@ -9,7 +9,8 @@ class whatsapp extends Controller
     public function sendMessage(Request $request)
     {
         $message = $request->get('message');
-        $receiverNumber = $request->get('receiver_number');
+        //$receiverNumber = $request->get('receiver_number');
+        $receiverNumber = '+251936747134';
 
         // Twilio Account SID and Auth Token
         $accountSid = config('services.twilio.sid');
@@ -21,7 +22,8 @@ class whatsapp extends Controller
                 'whatsapp:++12673802453',
                 [
                     'from' => 'whatsapp:+12673802453',
-                    'body' => $message,
+                    //'body' => $message,
+                    'body' => "Hello From Laravel module",
                     'to' => "Whatsapp:{$receiverNumber}"
                 ]
             );
